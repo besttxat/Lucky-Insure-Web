@@ -1,15 +1,25 @@
 'use client';
 
-export default function AppWelcome() {
-    const title = "Welcome to cosci";
+import { useState } from "react";
+
+type AppWelcomeProps = {
+    headTitle: string
+    isShow: boolean
+}
+
+export default function AppWelcome({ headTitle,isShow }: AppWelcomeProps) {
+    // let title = "Welcome to cosci";
+    const [title, setTitle] = useState('Welcome to cosci');
     const year = <p>2025</p>;
-    const isShow = true;
     const handleClick = () => {
-        alert("Hello TypeScript");
+        // title = 'Welcome to SWU';
+        setTitle('Welcome to SWU');
+        // alert("Hello TypeScript");
     }
 
     return (
         <div>
+            <h1>{headTitle}</h1>
             <p>{title.toLocaleUpperCase()}</p>
             <button className="bg-blue-700 p-3 rounded-lg" onClick={handleClick}>press button</button>
             {year}
