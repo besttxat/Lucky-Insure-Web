@@ -3,10 +3,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
+
 
 const Hero02 = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center">
+    <div className=" flex items-center justify-center">
       <div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12">
         <div>
           <Badge
@@ -19,7 +21,7 @@ const Hero02 = () => {
             </Link>
           </Badge>
           <h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-tighter">
-            Customized Shadcn UI Blocks & Components
+            ประกันชั้น 1 คุ้มครองครบจบ
           </h1>
           <p className="mt-6 max-w-[60ch] sm:text-lg">
             Explore a collection of Shadcn UI blocks and components, ready to
@@ -27,9 +29,11 @@ const Hero02 = () => {
             easy-to-implement examples.
           </p>
           <div className="mt-12 flex items-center gap-4">
+          <Link href="/product">
             <Button size="lg" className="rounded-full text-base">
-              Get Started <ArrowUpRight className="h-5! w-5!" />
+              ประกัน <ArrowUpRight className="h-5! w-5!" />
             </Button>
+            </Link>
             <Button
               variant="outline"
               size="lg"
@@ -39,7 +43,15 @@ const Hero02 = () => {
             </Button>
           </div>
         </div>
-        <div className="w-full aspect-video bg-accent rounded-xl" />
+        <div className="w-full aspect-video bg-accent rounded-xl" >
+        <Image
+          src="/lucky.png"        // 👈 รูปต้องอยู่ใน public/hero.jpg
+          alt="Hero banner"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover rounded-xl"
+       />
+        </div>
       </div>
     </div>
   );
