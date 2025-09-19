@@ -1,7 +1,9 @@
+import Blog02Page from "../blog/page";
+
 export default function About() {
     return (
         <div>
-            <h1>รายการ</h1>
+            <Blog02Page />
         </div>
     );
 }
