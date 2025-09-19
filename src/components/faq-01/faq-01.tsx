@@ -7,29 +7,29 @@ import {
 
 const faq = [
   {
-    question: "What is your return policy?",
+    question: "ทำประกันไปแล้วคุ้มครองอะไรบ้าง?",
     answer:
-      "You can return unused items in their original packaging within 30 days for a refund or exchange. Contact support for assistance.",
+      "ครอบคลุมค่ารักษาพยาบาลจากอุบัติเหตุ/เจ็บป่วยตามวงเงินในกรมธรรม์ ค่าห้อง-อาหาร-พยาบาล ค่าหมอและการผ่าตัด รวมถึงผลประโยชน์เพิ่มเติมที่เลือก เช่น เงินชดเชยรายได้หรือคุ้มครองอุบัติเหตุส่วนบุคคล รายละเอียดดูได้ในตารางความคุ้มครองของแต่ละแผน",
   },
   {
-    question: "How do I track my order?",
+    question: "ค่าเบี้ยประกันคำนวณจากอะไร?",
     answer:
-      "Track your order using the link provided in your confirmation email, or log into your account to view tracking details.",
+      "พิจารณาจากอายุ เพศ ประวัติสุขภาพ แผนความคุ้มครอง/วงเงินที่เลือก และวิธีชำระ (รายเดือน/รายปี) ลูกค้าสามารถกรอกข้อมูลเบื้องต้นในหน้า “คำนวณเบี้ย” เพื่อดูราคาโดยประมาณก่อนตัดสินใจ",
   },
   {
-    question: "Do you ship internationally?",
+    question: "เคลมประกันอย่างไร และใช้เวลากี่วัน?",
     answer:
-      "Yes, we ship worldwide. Shipping fees and delivery times vary by location, and customs duties may apply for some countries.",
+      "แจ้งเคลมผ่านไลน์/แอป/คอลเซ็นเตอร์ อัปโหลดเอกสาร เช่น ใบเสร็จรับเงิน/ใบรับรองแพทย์ ทีมงานจะตรวจสอบเอกสารและโอนเงินเข้าบัญชีที่แจ้งไว้ ปกติใช้เวลา ประมาณ 7–14 วันทำการ หลังเอกสารครบถ้วน (ระยะเวลาจริงขึ้นกับประเภทเคลมและโรงพยาบาล)",
   },
   {
-    question: "What payment methods do you accept?",
+    question: "มีโรคประจำตัวทำประกันได้ไหม?",
     answer:
-      "We accept Visa, MasterCard, American Express, PayPal, Apple Pay, and Google Pay, ensuring secure payment options for all customers.",
+      "ทำได้ในหลายกรณี แต่อาจมีเงื่อนไขเพิ่มเติม เช่น ช่วงเวลารอคอย (waiting period) หรือยกเว้นความคุ้มครองบางอาการที่เป็นมาก่อน กรุณากรอกแบบประเมินสุขภาพให้ครบถ้วน เพื่อให้เราประเมินแผนที่เหมาะสมที่สุด",
   },
   {
-    question: "What if I receive a damaged item?",
+    question: "สามารถยกเลิกหรือขอเงินคืนได้หรือไม่?",
     answer:
-      "Please contact our support team within 48 hours of delivery with photos of the damaged item. We’ll arrange a replacement or refund.",
+      "สามารถยกเลิกได้ตามเงื่อนไขในกรมธรรม์ หากยกเลิกภายในช่วงพิจารณา (free-look period) มักขอคืนค่าเบี้ยได้เต็มจำนวน หลังจากนั้นการคืนเงินจะเป็นไปตามสัดส่วนระยะเวลาคุ้มครองที่ใช้ไปแล้ว",
   },
 ];
 // min-h-screen 
@@ -38,7 +38,7 @@ const FAQ01 = () => {
     <div className="flex items-center justify-center px-6 py-12">
       <div className="max-w-xl">
         <h2 className="text-4xl md:text-5xl leading-[1.15]! font-semibold tracking-tighter">
-          Questions & Answers
+          คำถามที่พบบ่อย (FAQ)
         </h2>
 
         <Accordion type="single" className="mt-6" defaultValue="question-0">

@@ -11,37 +11,37 @@ import React from "react";
 const features = [
   {
     icon: Settings2,
-    title: "Customizable Layouts",
+    title: "ประกันที่เลือกปรับได้ตามใจคุณ",
     description:
       "Design your space with drag-and-drop simplicity—create grids, lists, or galleries in seconds.",
   },
   {
     icon: Blocks,
-    title: "Interactive Widgets",
+    title: "เครื่องมือคำนวณเบี้ยประกัน",
     description:
       "Embed polls, quizzes, or forms to keep your audience engaged.",
   },
   {
     icon: Bot,
-    title: "AI-Powered Tools",
+    title: "แนะนำประกันอัตโนมัติ",
     description:
       "Generate summaries, auto-format content, or translate into multiple languages seamlessly.",
   },
   {
     icon: Film,
-    title: "Media Integrations",
+    title: "รีวิวจริงจากลูกค้า & วิดีโอให้ความรู้",
     description:
       "Connect with Spotify, Instagram, or your own media library for dynamic visuals and sound.",
   },
   {
     icon: ChartPie,
-    title: "Advanced Analytics",
+    title: "ติดตามความคุ้มครองและเบี้ยได้ง่าย",
     description:
       "Track engagement, clicks, and user activity with intuitive charts and reports.",
   },
   {
     icon: MessageCircle,
-    title: "Seamless Collaboration",
+    title: "ที่ปรึกษาพร้อมดูแลทุกขั้นตอน",
     description:
       "Comment, tag, and assign tasks directly within your documents.",
   },

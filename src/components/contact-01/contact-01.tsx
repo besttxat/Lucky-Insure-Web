@@ -8,7 +8,7 @@ const Contact01Page = () => (
         Contact Us
       </b>
       <h2 className="mt-3 text-2xl md:text-4xl font-semibold tracking-tight">
-        Get In Touch
+        Lucky Insure
       </h2>
       <p className="mt-4 text-base sm:text-lg text-muted-foreground">
         Our friendly team is always here to chat.
@@ -26,7 +26,7 @@ const Contact01Page = () => (
             className="mt-4 font-medium text-primary"
             href="mailto:akashmoradiya3444@gmail.com"
           >
-            akashmoradiya3444@gmail.com
+            luckyinsure@gmail.com
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
@@ -42,7 +42,7 @@ const Contact01Page = () => (
             href="https://map.google.com"
             target="_blank"
           >
-            100 Smith Street Collingwood <br /> VIC 3066 AU
+            Lamphun <br /> Thailand
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
@@ -55,7 +55,7 @@ const Contact01Page = () => (
             className="mt-4 font-medium text-primary"
             href="tel:akashmoradiya3444@gmail.com"
           >
-            +1 (555) 000-0000
+            +66 95 165 5348
           </Link>
         </div>
       </div>
