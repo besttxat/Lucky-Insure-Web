@@ -1,65 +1,52 @@
+// app/product/page.tsx
+import Image from "next/image";
+import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader } from "@/components/ui/card";
-import {
-  Select,
-  SelectContent,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
 import { ChevronRight } from "lucide-react";
 
-const Product = () => {
+const products = [
+  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน อุบัติเหตุ ค่ารักษา ซ่อมรถ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp" },
+  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุ เริ่มต้น 7,500 บาท/ปี", image: "/car2.webp" },
+  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "ราคาประหยัดสุด คุ้มครองคู่กรณี เริ่มต้น 3,500 บาท/ปี", image: "/car3.webp" },
+  { id: 4, category: "ประกันสุขภาพ", title: "ประกันสุขภาพเหมาจ่าย", description: "คุ้มครองค่ารักษาพยาบาลสูงสุด 1,000,000 บาท/ปี", image: "/health1.jpg" },
+  { id: 5, category: "ประกันเดินทาง", title: "ประกันการเดินทางต่างประเทศ", description: "คุ้มครองอุบัติเหตุและค่ารักษาพยาบาลในต่างประเทศ", image: "/travel1.png" },
+  { id: 6, category: "ประกันอุบัติเหตุ", title: "ประกันอุบัติเหตุส่วนบุคคล", description: "ชดเชยรายได้และค่ารักษาพยาบาลจากอุบัติเหตุ", image: "/pa1.jpg" },
+];
+
+export default function ProductPage() {
   return (
-    <div className="max-w-(--breakpoint-xl) mx-auto py-16 px-6 xl:px-0">
-      <div className="flex items-end justify-between">
-        <h2 className="text-3xl font-bold tracking-tight">Posts</h2>
-        <Select defaultValue="recommended">
-          <SelectTrigger className="w-[180px]">
-            <SelectValue />
-          </SelectTrigger>
-          <SelectContent>
-            <SelectItem value="recommended">Recommended</SelectItem>
-            <SelectItem value="latest">Latest</SelectItem>
-            <SelectItem value="popular">Popular</SelectItem>
-          </SelectContent>
-        </Select>
-      </div>
+    <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+      {products.map((item) => (
+        <Card key={item.id} className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto">
+          <CardHeader className="p-0">
+            <Image
+              src={item.image}
+              alt={item.title}
+              width={400}
+              height={250}
+              className="w-full aspect-video object-cover border-b"
+            />
+          </CardHeader>
 
-      <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-        {[0, 1, 2, 3, 4, 5, 6, 7].map((i) => (
-          <Card key={i} className="shadow-none overflow-hidden rounded-md py-0">
-            <CardHeader className="p-0">
-              <div className="aspect-video bg-muted w-full border-b" />
-            </CardHeader>
-            <CardContent className="pb-6">
-              <div className="flex items-center gap-3">
-                <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
-                  Technology
-                </Badge>
-                <span className="font-medium text-xs text-muted-foreground">
-                  5 min read
-                </span>
-              </div>
+          <CardContent className="pb-6">
+            <div className="flex items-center gap-3">
+              <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
+                {item.category}
+              </Badge>
+            </div>
 
-              <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
-                A beginner&apos;s guide to blackchain for engineers
-              </h3>
-              <p className="mt-2 text-muted-foreground">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Suspendisse varius enim in eros.
-              </p>
+            <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
+              {item.title}
+            </h3>
+            <p className="mt-2 text-muted-foreground">{item.description}</p>
 
-              <Button size="sm" className="mt-6 shadow-none">
-                Read more <ChevronRight />
-              </Button>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
+            <Button size="sm" className="mt-6 shadow-none">
+              Read more <ChevronRight />
+            </Button>
+          </CardContent>
+        </Card>
+      ))}
     </div>
   );
-};
-
-export default  Product;
+}
