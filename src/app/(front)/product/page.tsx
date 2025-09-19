@@ -4,14 +4,15 @@ import { Card, CardHeader, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
+import Link from "next/link";
 
 const products = [
-  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน อุบัติเหตุ ค่ารักษา ซ่อมรถ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp" },
-  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุ เริ่มต้น 7,500 บาท/ปี", image: "/car2.webp" },
-  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "ราคาประหยัดสุด คุ้มครองคู่กรณี เริ่มต้น 3,500 บาท/ปี", image: "/car3.webp" },
-  { id: 4, category: "ประกันสุขภาพ", title: "ประกันสุขภาพเหมาจ่าย", description: "คุ้มครองค่ารักษาพยาบาลสูงสุด 1,000,000 บาท/ปี", image: "/health1.jpg" },
-  { id: 5, category: "ประกันเดินทาง", title: "ประกันการเดินทางต่างประเทศ", description: "คุ้มครองอุบัติเหตุและค่ารักษาพยาบาลในต่างประเทศ", image: "/travel1.png" },
-  { id: 6, category: "ประกันอุบัติเหตุ", title: "ประกันอุบัติเหตุส่วนบุคคล", description: "ชดเชยรายได้และค่ารักษาพยาบาลจากอุบัติเหตุ", image: "/pa1.jpg" },
+  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน อุบัติเหตุ ค่ารักษา ซ่อมรถ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp", link: "/" },
+  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุ เริ่มต้น 7,500 บาท/ปี", image: "/car2.webp", link: "/about" },
+  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "ราคาประหยัดสุด คุ้มครองคู่กรณี เริ่มต้น 3,500 บาท/ปี", image: "/car3.webp", link: "/about" },
+  { id: 4, category: "ประกันสุขภาพ", title: "ประกันสุขภาพเหมาจ่าย", description: "คุ้มครองค่ารักษาพยาบาลสูงสุด 1,000,000 บาท/ปี", image: "/health1.jpg", link: "/about" },
+  { id: 5, category: "ประกันเดินทาง", title: "ประกันการเดินทางต่างประเทศ", description: "คุ้มครองอุบัติเหตุและค่ารักษาพยาบาลในต่างประเทศ", image: "/travel1.png", link: "/about" },
+  { id: 6, category: "ประกันอุบัติเหตุ", title: "ประกันอุบัติเหตุส่วนบุคคล", description: "ชดเชยรายได้และค่ารักษาพยาบาลจากอุบัติเหตุ", image: "/pa1.jpg", link: "/about" },
 ];
 
 export default function ProductPage() {
@@ -41,9 +42,13 @@ export default function ProductPage() {
             </h3>
             <p className="mt-2 text-muted-foreground">{item.description}</p>
 
-            <Button size="sm" className="mt-6 shadow-none">
-              Read more <ChevronRight />
-            </Button>
+            {/* ปุ่มของใครของมัน */}
+        <Button size="sm" className="mt-6 shadow-none" asChild>
+            <Link href={item.link}>
+                Read more <ChevronRight />
+            </Link>
+        </Button>
+
           </CardContent>
         </Card>
       ))}
