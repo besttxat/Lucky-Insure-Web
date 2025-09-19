@@ -52,7 +52,7 @@ const Features01Page = () => {
     <div className="min-h-screen flex items-center justify-center py-12">
       <div>
         <h2 className="text-4xl sm:text-5xl font-semibold tracking-tight text-center">
-          Unleash Your Creativity
+          แนะนำโดย Lucky Insure
         </h2>
         <div className="mt-10 sm:mt-16 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-(--breakpoint-lg) mx-auto px-6">
           {features.map((feature) => (
