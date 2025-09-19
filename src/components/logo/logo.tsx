@@ -6,8 +6,8 @@ export default function Logo() {
     <Image
       src="/luckyy.jpg"        // ต้องมีไฟล์ public/luckyy.png อยู่จริง
       alt="Lucky Insure Logo"
-      width={124}
-      height={32}
+      width={60}
+      height={3}
       priority
     />
   );
