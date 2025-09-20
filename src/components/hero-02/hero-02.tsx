@@ -35,12 +35,19 @@ const Hero02 = () => {
             </Button>
             </Link>
             <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full text-base shadow-none"
-            >
-              <CirclePlay className="h-5! w-5!" /> Watch Demo
-            </Button>
+                asChild
+                variant="outline"
+                size="lg"
+                className="rounded-full text-base shadow-none"
+              >
+            <Link
+                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                target="_blank"       // 👈 เปิดแท็บใหม่
+                rel="noopener noreferrer"
+              >
+    <CirclePlay className="h-5 w-5" /> Watch Demo
+  </Link>
+</Button>
           </div>
         </div>
         <div className="w-full aspect-video bg-accent rounded-xl" >
