@@ -12,7 +12,7 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-
+import Image from "next/image";
 
 const features = [
   {
@@ -86,6 +86,13 @@ const Features04Page = () => {
 
           {/* Media */}
           <div className="hidden md:block w-full h-full bg-muted rounded-xl" />
+          <Image
+            src="/car1.webp"
+            alt="ประกันรถยนต์"
+            width={600}
+            height={400}
+            className="w-full h-full object-cover"
+          />
         </div>
       </div>
     </div>
