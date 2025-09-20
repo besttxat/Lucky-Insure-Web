@@ -17,39 +17,39 @@ import {
 const features = [
   {
     icon: Goal,
-    title: "Identify Opportunities",
+    title: "คุ้มครองครอบคลุมที่สุด",
     description:
-      "Easily uncover untapped areas to explore and expand your reach effortlessly and effectively.",
+      "ทั้งรถผู้เอาประกัน, รถคู่กรณี, ทรัพย์สินบุคคลภายนอก รวมถึงผู้ขับขี่และผู้โดยสาร",
   },
   {
     icon: BookCheck,
-    title: "Build Authority",
+    title: "คุ้มครองอุบัติเหตุทุกกรณี",
     description:
-      "Create valuable content that resonates, inspires trust, and positions you as an expert.",
+      "ไม่ว่าจะชนกับยานพาหนะ, ชนสิ่งกีดขวาง, รถหาย, ไฟไหม้, น้ำท่วม",
   },
   {
     icon: ChartPie,
-    title: "Instant Insights",
+    title: "มีคุ้มครองภัยธรรมชาติ",
     description:
-      "Gain immediate, actionable insights with a quick glance, enabling fast decision-making.",
+      "เช่น น้ำท่วม, แผ่นดินไหว, พายุ, ลูกเห็บ (แล้วแต่เงื่อนไขบริษัท)",
   },
   {
     icon: Users,
-    title: "Engage with Your Audience",
+    title: "ดูแลค่ารักษาพยาบาล",
     description:
-      "Boost audience engagement with interactive features like polls, quizzes, and forms.",
+      "ทั้งของผู้เอาประกัน ผู้โดยสาร และบุคคลภายนอก",
   },
   {
     icon: FolderSync,
-    title: "Automate Your Workflow",
+    title: "มีบริการช่วยเหลือฉุกเฉิน 24 ชั่วโมง",
     description:
-      "Streamline your processes by automating repetitive tasks, saving time and reducing effort.",
+      "เช่น รถยก, รถลาก, ติดต่อประสานงานอุบัติเหตุ",
   },
   {
     icon: Zap,
-    title: "Accelerate Growth",
+    title: "เบี้ยประกันสูงกว่าชั้นอื่น",
     description:
-      "Supercharge your growth by implementing strategies that drive results quickly and efficiently.",
+      "เนื่องจากให้ความคุ้มครองกว้างที่สุด แต่สามารถเลือกแบบมี/ไม่มี Deductible (ค่าเสียหายส่วนแรก) เพื่อลดเบี้ยได้",
   },
 ];
 
@@ -58,7 +58,7 @@ const Features04Page = () => {
     <div className="min-h-screen flex items-center justify-center">
       <div className="max-w-(--breakpoint-lg) w-full py-12 px-6">
         <h2 className="text-4xl md:text-5xl md:leading-14 font-semibold tracking-[-0.03em] max-w-lg">
-          Boost Your Strategy with Smart Features
+        ประกันรถยนต์ชั้น 1
         </h2>
         <div className="mt-6 md:mt-10 w-full mx-auto grid md:grid-cols-2 gap-12">
           <div>
