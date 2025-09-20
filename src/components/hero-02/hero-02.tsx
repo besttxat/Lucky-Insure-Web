@@ -24,9 +24,8 @@ const Hero02 = () => {
             ประกันชั้น 1 คุ้มครองครบจบ
           </h1>
           <p className="mt-6 max-w-[60ch] sm:text-lg">
-            Explore a collection of Shadcn UI blocks and components, ready to
-            preview and copy. Streamline your development workflow with
-            easy-to-implement examples.
+          ประกันรถยนต์ชั้น 1 คุ้มครองครบทุกความเสี่ยง ทั้งอุบัติเหตุ รถชน รถหาย ไฟไหม้ น้ำท่วม รวมถึงค่ารักษาพยาบาลและความเสียหายต่อบุคคลภายนอก 
+          มาพร้อมบริการช่วยเหลือฉุกเฉินตลอด 24 ชั่วโมง ให้คุณขับขี่มั่นใจ อุ่นใจทุกเส้นทาง ครอบคลุมและคุ้มค่าที่สุด
           </p>
           <div className="mt-12 flex items-center gap-4">
           <Link href="/product">
