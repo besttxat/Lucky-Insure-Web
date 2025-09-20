@@ -41,7 +41,7 @@ const Hero02 = () => {
                 className="rounded-full text-base shadow-none"
               >
             <Link
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+                href="https://www.youtube.com/watch?v=Vri7TWGNgPA"
                 target="_blank"       // 👈 เปิดแท็บใหม่
                 rel="noopener noreferrer"
               >
