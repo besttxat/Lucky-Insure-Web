@@ -85,14 +85,16 @@ const Features04Page = () => {
           </div>
 
           {/* Media */}
-          <div className="hidden md:block w-full h-full bg-muted rounded-xl" />
+          <div className="hidden md:block w-full h-full bg-muted rounded-xl" >
           <Image
-            src="/car1.webp"
-            alt="ประกันรถยนต์"
+            src="/car1.webp" 
+            alt="ประกันรถยนต์ชั้น 1"
             width={600}
             height={400}
-            className="w-full h-full object-cover"
-          />
+            className="w-full h-full object-cover rounded-2xl"
+            priority
+            />
+          </div>  
         </div>
       </div>
     </div>
