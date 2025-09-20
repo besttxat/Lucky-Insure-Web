@@ -69,7 +69,7 @@ const Footer05Page = () => {
             <span className="text-muted-foreground">
               &copy; {new Date().getFullYear()}{" "}
               <Link href="/" target="_blank">
-                Shadcn UI Blocks
+                Lucky Insure
               </Link>
               . All rights reserved.
             </span>
