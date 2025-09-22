@@ -10,6 +10,15 @@ const Hero02 = () => {
   return (
     <div className=" flex items-center justify-center">
       <div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 py-12">
+        <div className="w-full aspect-video bg-accent rounded-xl" >
+        <Image
+          src="/lucky.png"        // 👈 รูปต้องอยู่ใน public/hero.jpg
+          alt="Hero banner"
+          width={1920}
+          height={1080}
+          className="w-full h-full object-cover rounded-xl"
+       />
+        </div>
         <div>
           <Badge
             variant="secondary"
@@ -48,15 +57,6 @@ const Hero02 = () => {
   </Link>
 </Button>
           </div>
-        </div>
-        <div className="w-full aspect-video bg-accent rounded-xl" >
-        <Image
-          src="/lucky.png"        // 👈 รูปต้องอยู่ใน public/hero.jpg
-          alt="Hero banner"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover rounded-xl"
-       />
         </div>
       </div>
     </div>
