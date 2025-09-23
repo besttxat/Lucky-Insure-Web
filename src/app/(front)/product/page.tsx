@@ -7,12 +7,11 @@ import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 
 const products = [
-  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน อุบัติเหตุ ค่ารักษา ซ่อมรถ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp", link: "/carinsure1" },
-  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุ เริ่มต้น 7,500 บาท/ปี", image: "/car2.webp", link: "/carinsure1" },
-  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "ราคาประหยัดสุด คุ้มครองคู่กรณี เริ่มต้น 3,500 บาท/ปี", image: "/car3.webp", link: "/carinsure1" },
-  { id: 4, category: "ประกันสุขภาพ", title: "ประกันสุขภาพเหมาจ่าย", description: "คุ้มครองค่ารักษาพยาบาลสูงสุด 1,000,000 บาท/ปี", image: "/health1.jpg", link: "/carinsure1" },
-  { id: 5, category: "ประกันเดินทาง", title: "ประกันการเดินทางต่างประเทศ", description: "คุ้มครองอุบัติเหตุและค่ารักษาพยาบาลในต่างประเทศ", image: "/travel1.png", link: "/carinsure1" },
-  { id: 6, category: "ประกันอุบัติเหตุ", title: "ประกันอุบัติเหตุส่วนบุคคล", description: "ชดเชยรายได้และค่ารักษาพยาบาลจากอุบัติเหตุ", image: "/pa1.jpg", link: "/carinsure1" },
+  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน รถเรา + รถคู่กรณี + อุบัติเหตุ + ภัยธรรมชาติ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp", link: "/carinsure1" },
+  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2+", description: "คุ้มครองรถคู่กรณี และรถเราในกรณีชนกับพาหนะทางบก เริ่มต้น 9,000 บาท/ปี", image: "/car2plus.webp", link: "/carinsure2+" },
+  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุบุคคล แต่ไม่คุ้มครองรถเรา เริ่มต้น 7,500 บาท/ปี", image: "/car2.webp", link: "/carinsure2" },
+  { id: 4, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3+", description: "คุ้มครองรถคู่กรณี + รถเรา (เฉพาะกรณีชนกับพาหนะทางบก) เบี้ยถูก เริ่มต้น 5,000 บาท/ปี", image: "/car3plus.webp", link: "/carinsure3+" },
+  { id: 5, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "คุ้มครองเฉพาะรถคู่กรณี เน้นเบี้ยถูกสุด เริ่มต้น 3,500 บาท/ปี", image: "/car3.webp", link: "/carinsure3" },
 ];
 
 export default function ProductPage() {
