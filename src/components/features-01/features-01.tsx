@@ -22,7 +22,7 @@ const features = [
     title: "เครื่องมือคำนวณเบี้ยประกัน",
     description:
       "Embed polls, quizzes, or forms to keep your audience engaged.",
-    href: "/carinsure1",
+    href: "/calculator",
   },
   {
     icon: Bot,
