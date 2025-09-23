@@ -28,17 +28,17 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/">ประกันอุบัติเหตุ</Link>
+          <Link href="/accidentinsure">ประกันอุบัติเหตุ</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/">ประกันเดินทาง</Link>
+          <Link href="/travelinsure">ประกันเดินทาง</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/">ประกันอื่นๆ</Link>
+          <Link href="/etcinsure">ประกันอื่นๆ</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
