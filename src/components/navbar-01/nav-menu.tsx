@@ -23,22 +23,22 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/product?category=home">ประกันบ้าน</Link>
+          <Link href="/homeinsure">ประกันบ้าน</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/product?category=accident">ประกันอุบัติเหตุ</Link>
+          <Link href="/">ประกันอุบัติเหตุ</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/product?category=travel">ประกันเดินทาง</Link>
+          <Link href="/">ประกันเดินทาง</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild>
-          <Link href="/product?category=other">ประกันอื่นๆ</Link>
+          <Link href="/">ประกันอื่นๆ</Link>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
