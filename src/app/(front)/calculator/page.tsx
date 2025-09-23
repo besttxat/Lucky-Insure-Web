@@ -19,7 +19,7 @@ import {
 import { Switch } from "@/components/ui/switch";
 import { Slider } from "@/components/ui/slider";
 import { Badge } from "@/components/ui/badge";
-import { ArrowUpRight } from "lucide-react";
+// import { ArrowUpRight } from "lucide-react";
 
 // ---------- Schema ----------
 const schema = z.object({
@@ -96,7 +96,7 @@ export default function CalculatorPage() {
   const {
     control,
     register,
-    handleSubmit,
+    // handleSubmit,
     watch,
     setValue,
     formState: { errors },
@@ -290,7 +290,7 @@ export default function CalculatorPage() {
             </div>
 
             <div className="flex gap-3">
-              <Button
+              {/* <Button
                 type="submit"
                 onClick={handleSubmit((d) => {
                   // d ที่ได้จาก handleSubmit คือข้อมูลหลัง parse แล้ว => FormOutput
@@ -299,7 +299,7 @@ export default function CalculatorPage() {
                 className="rounded-full"
               >
                 ขอใบเสนอราคา <ArrowUpRight className="ml-1 h-4 w-4" />
-              </Button>
+              </Button> */}
               <Button type="button" variant="outline" className="rounded-full" onClick={() => reset()}>
                 รีเซ็ต
               </Button>
