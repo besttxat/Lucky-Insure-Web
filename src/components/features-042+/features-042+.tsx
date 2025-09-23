@@ -87,7 +87,7 @@ import {
             {/* Media */}
             <div className="hidden md:block w-full h-full bg-muted rounded-xl">
               <Image
-                src="/car2plus.webp"
+                src="/car2.webp"
                 alt="ประกันรถยนต์ชั้น 2+"
                 width={600}
                 height={400}
