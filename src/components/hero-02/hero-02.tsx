@@ -10,7 +10,7 @@ const Hero02 = () => {
     <div className="relative w-full h-[90vh] flex items-center justify-center overflow-hidden">
       {/* Background image */}
       <Image
-        src="/lucky.png"   // 👈 รูปต้องอยู่ใน public/lucky.png
+        src="/lucky.jpg"   // 👈 รูปต้องอยู่ใน public/lucky.png
         alt="Hero banner"
         fill
         className="object-cover"

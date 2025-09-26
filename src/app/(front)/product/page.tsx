@@ -5,6 +5,9 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Hero04 from "@/components/hero-04/hero-04";
+
+
 
 const products = [
   { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน รถเรา + รถคู่กรณี + อุบัติเหตุ + ภัยธรรมชาติ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp", link: "/carinsure1" },
@@ -16,7 +19,9 @@ const products = [
 
 export default function ProductPage() {
   return (
-    <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <>
+      <Hero04 />
+      <div id="products" className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
       {products.map((item) => (
         <Card key={item.id} className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto">
           <CardHeader className="p-0">
@@ -51,6 +56,7 @@ export default function ProductPage() {
           </CardContent>
         </Card>
       ))}
-    </div>
+      </div>
+    </>
   );
 }
