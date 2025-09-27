@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Hero04etc from "@/components/hero-04etc/hero-04etc";
 
 const productetc = [    
     { id: 1, category: "ประกันธุรกิจ", title: "ประกันร้านค้า/SME", description: "คุ้มครองไฟไหม้ น้ำท่วม และความเสียหายต่อทรัพย์สินในร้านค้า", image: "/biz1.jpg", link: "/biz1" },
@@ -15,43 +16,47 @@ const productetc = [
     { id: 6, category: "ประกันเกษตร", title: "ประกันภัยพืชผล", description: "คุ้มครองพืชผลเกษตรทั่วไปจากโรค แมลง และภัยธรรมชาติ", image: "/agri2.jpg", link: "/agri2" },
   ];
 
-export default function homeinsure() {
-  return (
-    <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      {productetc.map((item) => (
-        <Card key={item.id} className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto">
-          <CardHeader className="p-0">
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={400}
-              height={250}
-              className="w-full aspect-video object-cover border-b"
-            />
-          </CardHeader>
-
-          <CardContent className="pb-6">
-            <div className="flex items-center gap-3">
-              <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
-                {item.category}
-              </Badge>
-            </div>
-
-            <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
-              {item.title}
-            </h3>
-            <p className="mt-2 text-muted-foreground">{item.description}</p>
-
-            {/* ปุ่มของใครของมัน */}
-        <Button size="sm" className="mt-6 shadow-none" asChild>
-            <Link href={item.link}>
-                Read more <ChevronRight />
-            </Link>
-        </Button>
-
-          </CardContent>
-        </Card>
-      ))}
-    </div>
-  );
-}
+  export default function homeinsure() {
+    return (
+      <>
+      <Hero04etc/>
+      <section id="productshome" className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        {productetc.map((item) => (
+          <Card key={item.id} className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto">
+            <CardHeader className="p-0">
+              <Image
+                src={item.image}
+                alt={item.title}
+                width={400}
+                height={250}
+                className="w-full aspect-video object-cover border-b"
+              />
+            </CardHeader>
+  
+            <CardContent className="pb-6">
+              <div className="flex items-center gap-3">
+                <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
+                  {item.category}
+                </Badge>
+              </div>
+  
+              <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
+                {item.title}
+              </h3>
+              <p className="mt-2 text-muted-foreground">{item.description}</p>
+  
+              {/* ปุ่มของใครของมัน */}
+          <Button size="sm" className="mt-6 shadow-none" asChild>
+              <Link href={item.link}>
+                  Read more <ChevronRight />
+              </Link>
+          </Button>
+  
+            </CardContent>
+          </Card>
+        ))}
+      </section>
+      </>
+    );
+  }
+  

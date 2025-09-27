@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
+import Hero04home from "@/components/hero-04home/hero-04home";
 
 const productshome = [
     { id: 1, category: "ประกันบ้าน", title: "ประกันบ้านชั้น 1", description: "คุ้มครองรอบด้าน อัคคีภัย น้ำท่วม โจรกรรม เริ่มต้น 12,000 บาท/ปี", image: "/home1.jpg", link: "/homeinsure1" },
@@ -17,7 +18,9 @@ const productshome = [
 
 export default function homeinsure() {
   return (
-    <div className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+    <>
+    <Hero04home/>
+    <section id="productshome" className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
       {productshome.map((item) => (
         <Card key={item.id} className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto">
           <CardHeader className="p-0">
@@ -52,6 +55,7 @@ export default function homeinsure() {
           </CardContent>
         </Card>
       ))}
-    </div>
+    </section>
+    </>
   );
 }
