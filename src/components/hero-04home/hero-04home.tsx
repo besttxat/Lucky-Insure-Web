@@ -20,11 +20,10 @@ const Hero04home = () => {
             </Link>
           </Badge>
           <h1 className="mt-6 max-w-[20ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-tighter">
-            เลือกประกันบ้านที่ใช่สำหรับคุณ
+          ปกป้องบ้านและทรัพย์สินที่คุณรัก ด้วยประกันบ้านที่คุ้มครองครบวงจร
           </h1>
           <p className="mt-6 max-w-[60ch] text-lg">
-            เปรียบเทียบความคุ้มครองและเบี้ยได้ง่าย ครบทุกชั้น ทั้งชั้น 1, 2+, 2, 3+ และ 3
-            เลือกแผนที่คุ้มค่า ตรงใจ พร้อมบริการช่วยเหลือฉุกเฉิน 24 ชม.
+          ประกันบ้านนี้คุ้มครองทั้งไฟไหม้ ฟ้าผ่า ระเบิด ภัยธรรมชาติ ทรัพย์สินภายในบ้าน การโจรกรรม และความเสียหายที่อาจเกิดกับบุคคลภายนอกครบถ้วนในกรมธรรม์เดียว
           </p>
           <div className="mt-12 flex items-center gap-4">
             <Button size="lg" className="rounded-full text-base" asChild>
