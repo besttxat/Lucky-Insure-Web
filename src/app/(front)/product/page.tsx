@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
 import Hero04 from "@/components/hero-04/hero-04";
+import ContactQrCard from "@/components/contact-qr-card/contact-qr-card";
 
 
 
@@ -21,42 +22,56 @@ export default function ProductPage() {
   return (
     <>
       <Hero04 />
-      <div id="products" className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
-      {products.map((item) => (
-        <Card key={item.id} className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto">
-          <CardHeader className="p-0">
-            <Image
-              src={item.image}
-              alt={item.title}
-              width={400}
-              height={250}
-              className="w-full aspect-video object-cover border-b"
-            />
-          </CardHeader>
+      <section className="px-6 pb-12">
+        <div className="max-w-(--breakpoint-xl) mx-auto">
+          <div
+            id="products"
+            className="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-10"
+          >
+            {products.map((item) => (
+              <Card
+                key={item.id}
+                className="shadow-none overflow-hidden rounded-md py-0 max-w-[400px] mx-auto"
+              >
+                <CardHeader className="p-0">
+                  <Image
+                    src={item.image}
+                    alt={item.title}
+                    width={400}
+                    height={250}
+                    className="w-full aspect-video object-cover border-b"
+                  />
+                </CardHeader>
 
-          <CardContent className="pb-6">
-            <div className="flex items-center gap-3">
-              <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
-                {item.category}
-              </Badge>
-            </div>
+                <CardContent className="pb-6">
+                  <div className="flex items-center gap-3">
+                    <Badge className="bg-primary/5 text-primary hover:bg-primary/5 shadow-none">
+                      {item.category}
+                    </Badge>
+                  </div>
 
-            <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
-              {item.title}
-            </h3>
-            <p className="mt-2 text-muted-foreground">{item.description}</p>
+                  <h3 className="mt-4 text-[1.35rem] font-semibold tracking-tight">
+                    {item.title}
+                  </h3>
+                  <p className="mt-2 text-muted-foreground">{item.description}</p>
 
-            {/* ปุ่มของใครของมัน */}
-        <Button size="sm" className="mt-6 shadow-none" asChild>
-            <Link href={item.link}>
-                Read more <ChevronRight />
-            </Link>
-        </Button>
-
-          </CardContent>
-        </Card>
-      ))}
-      </div>
+                  {/* ปุ่มของใครของมัน */}
+                  <Button size="sm" className="mt-6 shadow-none" asChild>
+                    <Link href={item.link}>
+                      Read more <ChevronRight />
+                    </Link>
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+      <section className="w-full px-6 pb-20">
+        <div className="max-w-(--breakpoint-xl) mx-auto flex flex-col items-center text-center gap-4">
+          <ContactQrCard />
+        </div>
+      </section>
     </>
   );
 }

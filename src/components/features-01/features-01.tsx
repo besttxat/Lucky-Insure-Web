@@ -12,42 +12,42 @@ import Link from "next/link";
 const features = [
   {
     icon: Settings2,
-    title: "ประกันที่เลือกปรับได้ตามใจคุณ",
+    title: "ประกันรถยนต์ทุกชั้น",
     description:
       "Design your space with drag-and-drop simplicity—create grids, lists, or galleries in seconds.",
     href: "/product",
   },
   {
     icon: Blocks,
-    title: "เครื่องมือคำนวณเบี้ยประกัน",
+    title: "ประกันบ้าน",
     description:
       "Embed polls, quizzes, or forms to keep your audience engaged.",
-    href: "/calculator",
+    href: "/homeinsure",
   },
   {
     icon: Bot,
-    title: "แนะนำประกันอัตโนมัติ",
+    title: "ประกันอุบัติเหตุ",
     description:
       "Generate summaries, auto-format content, or translate into multiple languages seamlessly.",
-    href: "/product",
+    href: "/accidentinsure",
   },
   {
     icon: Film,
-    title: "รีวิวจริงจากลูกค้า & วิดีโอให้ความรู้",
+    title: "ประกันเดินทาง",
     description:
       "Connect with Spotify, Instagram, or your own media library for dynamic visuals and sound.",
-    href: "/about",
+    href: "/travelinsure",
   },
   {
     icon: ChartPie,
-    title: "ติดตามความคุ้มครองและเบี้ยได้ง่าย",
+    title: "ประกันอื่นๆ",
     description:
       "Track engagement, clicks, and user activity with intuitive charts and reports.",
-    href: "/product",
+    href: "/etcinsure",
   },
   {
     icon: MessageCircle,
-    title: "ที่ปรึกษาพร้อมดูแลทุกขั้นตอน",
+    title: "เกี่ยวกับเรา",
     description:
       "Comment, tag, and assign tasks directly within your documents.",
     href: "/about",

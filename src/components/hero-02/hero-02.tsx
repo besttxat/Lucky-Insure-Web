@@ -18,7 +18,7 @@ const Hero02 = () => {
       />
 
       {/* Overlay text */}
-      <div className="relative z-10 max-w-(--breakpoint-xl) mx-auto px-6 text-white">
+      <div className="relative z-10 max-w-(--breakpoint-xl) mx-auto px-6 text-white md:-translate-x-8 lg:-translate-x-12">
         <Badge
           variant="secondary"
           className="rounded-full py-1 border-border bg-white/20 text-white backdrop-blur-sm"
@@ -29,14 +29,16 @@ const Hero02 = () => {
           </Link>
         </Badge>
 
-        <h1 className="mt-6 max-w-[20ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold leading-tight tracking-tighter drop-shadow-lg">
-          ประกันชั้น 1 คุ้มครองครบจบ
-        </h1>
+        <div className="mt-6 inline-flex max-w-[65ch] flex-col gap-6 rounded-3xl border border-white/25 bg-black/40 px-8 py-6 shadow-lg backdrop-blur-sm">
+          <h1 className="max-w-[20ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-bold leading-tight tracking-tighter drop-shadow-lg">
+            ประกันชั้น 1 คุ้มครองครบจบ
+          </h1>
 
-        <p className="mt-6 max-w-[60ch] sm:text-lg drop-shadow">
-          ประกันรถยนต์ชั้น 1 คุ้มครองครบทุกความเสี่ยง ทั้งอุบัติเหตุ รถชน รถหาย ไฟไหม้ น้ำท่วม รวมถึงค่ารักษาพยาบาลและความเสียหายต่อบุคคลภายนอก 
-          มาพร้อมบริการช่วยเหลือฉุกเฉินตลอด 24 ชั่วโมง ให้คุณขับขี่มั่นใจ อุ่นใจทุกเส้นทาง ครอบคลุมและคุ้มค่าที่สุด
-        </p>
+          <p className="max-w-[60ch] sm:text-lg drop-shadow">
+            ประกันรถยนต์ชั้น 1 คุ้มครองครบทุกความเสี่ยง ทั้งอุบัติเหตุ รถชน รถหาย ไฟไหม้ น้ำท่วม รวมถึงค่ารักษาพยาบาลและความเสียหายต่อบุคคลภายนอก 
+            มาพร้อมบริการช่วยเหลือฉุกเฉินตลอด 24 ชั่วโมง ให้คุณขับขี่มั่นใจ อุ่นใจทุกเส้นทาง ครอบคลุมและคุ้มค่าที่สุด
+          </p>
+        
 
         <div className="mt-12 flex items-center gap-4">
           <Link href="/product">
@@ -59,6 +61,7 @@ const Hero02 = () => {
             </Link>
           </Button>
         </div>
+      </div>
       </div>
 
       {/* Optional dark overlay for readability */}

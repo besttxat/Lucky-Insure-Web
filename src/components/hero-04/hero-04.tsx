@@ -32,7 +32,7 @@ const Hero04 = () => {
                 ดูแพ็กเกจทั้งหมด <ArrowUpRight className="h-5! w-5!" />
               </Link>
             </Button>
-            <Button
+            {/* <Button
               variant="outline"
               size="lg"
               className="rounded-full text-base shadow-none"
@@ -41,7 +41,7 @@ const Hero04 = () => {
               <Link href="/calculator">
                 <CirclePlay className="h-5! w-5!" /> คำนวณเบี้ย
               </Link>
-            </Button>
+            </Button> */}
           </div>
         </div>
         <div className="relative w-full max-w-[560px] md:max-w-[680px] lg:max-w-[760px] h-[420px] md:h-[520px] lg:h-[640px] mx-auto lg:mx-0 lg:ml-8 flex items-center justify-center">
