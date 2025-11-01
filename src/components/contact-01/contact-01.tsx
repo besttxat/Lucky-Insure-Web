@@ -2,7 +2,7 @@ import { MailIcon, MapPinIcon, PhoneIcon } from "lucide-react";
 import Link from "next/link";
 
 const Contact01Page = () => (
-  <div className="min-h-screen flex items-center justify-center">
+  <div className=" flex items-center justify-center">
     <div className="text-center">
       <b className="text-muted-foreground uppercase font-semibold text-sm">
         Contact Us
@@ -24,9 +24,9 @@ const Contact01Page = () => (
           </p>
           <Link
             className="mt-4 font-medium text-primary"
-            href="mailto:akashmoradiya3444@gmail.com"
+            href="mailto:Piensatienkul@gmail.com"
           >
-            luckyinsure@gmail.com
+            Piensatienkul@gmail.com
           </Link>
         </div>
         <div className="text-center flex flex-col items-center">
@@ -39,7 +39,7 @@ const Contact01Page = () => (
           </p>
           <Link
             className="mt-4 font-medium text-primary"
-            href="https://map.google.com"
+            href="https://www.google.com/maps/place/Lamphun/@18.0658898,98.3367413,241571m/data=!3m2!1e3!4b1!4m6!3m5!1s0x30dbd3dc886c141f:0x55e97a20c888c81!8m2!3d18.5744357!4d99.0036972!16zL20vMDRxMnM4?entry=ttu&g_ep=EgoyMDI1MTAyOS4yIKXMDSoASAFQAw%3D%3D"
             target="_blank"
           >
             Lamphun <br /> Thailand
@@ -53,9 +53,10 @@ const Contact01Page = () => (
           <p className="mt-2 text-muted-foreground">Mon-Fri from 8am to 5pm.</p>
           <Link
             className="mt-4 font-medium text-primary"
-            href="tel:akashmoradiya3444@gmail.com"
+            href="tel:0659461789"
           >
-            +66 95 165 5348
+            0659461789/
+            0851554444
           </Link>
         </div>
       </div>

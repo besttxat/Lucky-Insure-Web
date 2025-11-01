@@ -87,7 +87,7 @@ const Features04Page = () => {
           {/* Media */}
           <div className="hidden md:block w-full h-full bg-muted rounded-xl" >
           <Image
-            src="/car1.webp" 
+            src="/car1.jpg" 
             alt="ประกันรถยนต์ชั้น 1"
             width={600}
             height={400}

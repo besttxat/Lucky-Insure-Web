@@ -29,9 +29,9 @@ import {
     },
     {
       icon: AlertTriangle,
-      title: "ไม่คุ้มครองรถหาย ไฟไหม้ น้ำท่วม",
+      title: "คุ้มครองรถหาย ไฟไหม้ น้ำท่วม",
       description:
-        "ความคุ้มครองจะไม่ครอบคลุมภัยธรรมชาติหรือกรณีรถหาย (ต่างจากชั้น 1)",
+        "ความคุ้มครองครอบคลุมภัยธรรมชาติหรือกรณีรถหาย (ต่างจากชั้น 1)",
     },
     {
       icon: Users,
@@ -87,7 +87,7 @@ import {
             {/* Media */}
             <div className="hidden md:block w-full h-full bg-muted rounded-xl">
               <Image
-                src="/car2.webp"
+                src="/car2plus.jpg"
                 alt="ประกันรถยนต์ชั้น 2+"
                 width={600}
                 height={400}

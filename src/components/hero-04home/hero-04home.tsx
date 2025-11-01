@@ -1,8 +1,4 @@
-import { Badge } from "@/components/ui/badge";
 import ContactQrCard from "@/components/contact-qr-card/contact-qr-card";
-import { Button } from "@/components/ui/button";
-import { ArrowUpRight, CirclePlay } from "lucide-react";
-import Link from "next/link";
 import React from "react";
 import Image from "next/image";
 
@@ -10,51 +6,39 @@ const Hero04home = () => {
   return (
     <div className="overflow-hidden">
       <section className="min-h-screen flex items-center justify-center">
-        <div className="max-w-(--breakpoint-xl) w-full mx-auto grid lg:grid-cols-2 gap-12 px-6 lg:px-10 xl:px-16 py-12 lg:py-0">
-          <div className="my-auto">
-          <Badge
-            variant="secondary"
-            className="rounded-full py-1 border-border"
-            asChild
-          >
-            {/* <Link href="#productshome">
-              โปรโมชันใหม่ประจำเดือน <ArrowUpRight className="ml-1 size-4" />
-            </Link> */}
-          </Badge>
-          <h1 className="mt-6 max-w-[20ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-tighter">
-          ปกป้องบ้านและทรัพย์สินที่คุณรัก ด้วยประกันบ้านที่คุ้มครองครบวงจร
-          </h1>
-          <p className="mt-6 max-w-[60ch] text-lg">
-          ประกันบ้านนี้คุ้มครองทั้งไฟไหม้ ฟ้าผ่า ระเบิด ภัยธรรมชาติ ทรัพย์สินภายในบ้าน การโจรกรรม และความเสียหายที่อาจเกิดกับบุคคลภายนอกครบถ้วนในกรมธรรม์เดียว
-          </p>
-          <div className="mt-12 flex items-center gap-4">
-            {/* <Button size="lg" className="rounded-full text-base" asChild>
-              <Link href="#productshome">
-                ดูแพ็กเกจทั้งหมด <ArrowUpRight className="h-5! w-5!" />
-              </Link>
-            </Button>
-            <Button
-              variant="outline"
-              size="lg"
-              className="rounded-full text-base shadow-none"
-              asChild
-            >
-              <Link href="/calculator">
-                <CirclePlay className="h-5! w-5!" /> คำนวณเบี้ย
-              </Link>
-            </Button> */}
+        <div className="max-w-(--breakpoint-xl) w-full mx-auto flex flex-col items-center gap-12 px-6 lg:px-10 xl:px-16 py-12 lg:py-0">
+          <div className="flex flex-col items-center text-center">
+            
+            <h1 className="mt-6 max-w-[30ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-tighter">
+              ปกป้องบ้านและทรัพย์สินที่คุณรัก ด้วยประกันบ้านที่คุ้มครองครบวงจร
+            </h1>
+            <p className="mt-6 max-w-[70ch] text-lg text-muted-foreground">
+              ประกันบ้านนี้คุ้มครองทั้งไฟไหม้ ฟ้าผ่า ระเบิด ภัยธรรมชาติ ทรัพย์สินภายในบ้าน การโจรกรรม และความเสียหายที่อาจเกิดกับบุคคลภายนอกครบถ้วนในกรมธรรม์เดียว
+            </p>
           </div>
-          </div>
-          <div className="relative w-full max-w-[560px] md:max-w-[680px] lg:max-w-[760px] h-[420px] md:h-[520px] lg:h-[640px] mx-auto lg:mx-0 lg:ml-8 flex items-center justify-center">
-            <Image
-              src="/HomeI.png"
-              alt="ภาพโปรโมชันประกัน"
-              width={1000}
-              height={1000}
-              sizes="(min-width:1280px) 760px, (min-width:768px) 680px, 560px"
-              className="h-full w-auto object-contain object-center rounded-2xl ring-1 ring-border"
-              priority
-            />
+
+          <div className="w-full flex flex-col md:flex-row items-center justify-center gap-8">
+            <div className="relative h-[550px] w-full max-w-[360px] rounded-[2.5rem] border border-border/60 bg-background/60 shadow-2xl shadow-primary/10 overflow-hidden">
+              <Image
+                src="/HomeI.png"
+                alt="ภาพโปรโมชันประกันบ้าน"
+                fill
+                sizes="(min-width:1024px) 360px, 80vw"
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            <div className="relative h-[550px] w-full max-w-[360px] rounded-[2.5rem] border border-border/60 bg-background/60 shadow-2xl shadow-primary/10 overflow-hidden">
+              <Image
+                src="/viriya.jpg"
+                alt="บ้านพร้อมการดูแลจากประกัน"
+                fill
+                sizes="(min-width:1024px) 360px, 80vw"
+                className="object-cover"
+                priority={false}
+              />
+            </div>
           </div>
         </div>
       </section>

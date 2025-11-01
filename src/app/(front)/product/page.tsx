@@ -5,23 +5,21 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
 import Link from "next/link";
-import Hero04 from "@/components/hero-04/hero-04";
 import ContactQrCard from "@/components/contact-qr-card/contact-qr-card";
 
 
 
 const products = [
-  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน รถเรา + รถคู่กรณี + อุบัติเหตุ + ภัยธรรมชาติ เริ่มต้น 12,000 บาท/ปี", image: "/car1.webp", link: "/carinsure1" },
-  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2+", description: "คุ้มครองรถคู่กรณี และรถเราในกรณีชนกับพาหนะทางบก เริ่มต้น 9,000 บาท/ปี", image: "/car2.webp", link: "/carinsure2+" },
-  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุบุคคล แต่ไม่คุ้มครองรถเรา เริ่มต้น 7,500 บาท/ปี", image: "/car2.webp", link: "/carinsure2" },
-  { id: 4, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3+", description: "คุ้มครองรถคู่กรณี + รถเรา (เฉพาะกรณีชนกับพาหนะทางบก) เบี้ยถูก เริ่มต้น 5,000 บาท/ปี", image: "/car3.webp", link: "/carinsure3+" },
-  { id: 5, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "คุ้มครองเฉพาะรถคู่กรณี เน้นเบี้ยถูกสุด เริ่มต้น 3,500 บาท/ปี", image: "/car3.webp", link: "/carinsure3" },
+  { id: 1, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 1", description: "คุ้มครองรอบด้าน รถเรา + รถคู่กรณี + อุบัติเหตุ + ภัยธรรมชาติ เริ่มต้น 7,489 บาท/ปี", image: "/car1.jpg", link: "/carinsure1" },
+  { id: 2, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 2+", description: "คุ้มครองรถคู่กรณี และรถเราในกรณีชนกับพาหนะทางบก เริ่มต้น 6,300 บาท/ปี", image: "/car2plus.jpg", link: "/carinsure2+" },
+  { id: 3, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3", description: "คุ้มครองรถคู่กรณี + อุบัติเหตุบุคคล แต่ไม่คุ้มครองรถเรา เริ่มต้น 1,990 บาท/ปี", image: "/car3.jpg", link: "/carinsure2" },
+  { id: 4, category: "ประกันรถยนต์", title: "ประกันรถยนต์ชั้น 3+", description: "คุ้มครองรถคู่กรณี + รถเรา (เฉพาะกรณีชนกับพาหนะทางบก) เบี้ยถูก เริ่มต้น 5,500 บาท/ปี", image: "/car3plus.jpg", link: "/carinsure3+" },
+  { id: 5, category: "ประกันรถยนต์", title: "พรบ", description: "คุ้มครองเฉพาะรถคู่กรณี เน้นเบี้ยถูกสุด เริ่มต้น 645 บาท/ปี", image: "/prb.jpg", link: "/carinsure3" },
 ];
 
 export default function ProductPage() {
   return (
     <>
-      <Hero04 />
       <section className="px-6 pb-12">
         <div className="max-w-(--breakpoint-xl) mx-auto">
           <div
