@@ -57,7 +57,7 @@ const defaultPosts: BlogPost[] = [
     title: "ประกันบ้าน",
     description: "ไฟไหม้ น้ำท่วม โจรกรรม—คุ้มครองอะไรบ้าง",
     date: "",
-    image: "/Homei.png",
+    image: "/HomeI.png",
     link: "/homeinsure",
   },
   {
